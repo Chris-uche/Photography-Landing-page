@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #eee;
+    margin: 0;
+    height: auto;
+}
+/* This is to ensure the items in the container are aligned*/
+.container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/* This is for the text size and weight
+*/
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+main{
+    max-width:900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px, 0px 40px rgba(0, 0, 0, 0.1);
+}
+#landing{
+    background: #fff;
+}
+#landingText{
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.landingInnerText h2{
+    color: #888;
+}
+
+.landing-image{
+    background:url('../Images/Camera.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 1 0 60vw;
+    margin: 0;
+}
+.btn{
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    color: #333;
+    text-decoration:none;
+    transform: background 500ms ease;
+}
+.btn:hover{
+    background: #f4f4f4;
+}
+#header{
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+};
+#header h2{
+border-left: dotted 2px #fff;
+border-right: dotted 2px #fff;
+display: inline-block;
+padding-left: 1rem ;
+padding-right: 1rem;
+}
+
+#caption{
+    padding: .8rem;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+};
+footer h3{
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+/*  For diferent screen sizes*/
+@media(min-width:500px){
+    #landing{
+        display: flex;
+        height: 100%;
+    }
+    #landingText{
+        height: 100vh;
+    }
+    .landing-image{
+        height: 100vh;
+    }
+}
+/* Screen sizes for buttons */
+@media(min-width:700px){
+    .btn{
+        padding: 1rem 3rem;
+    }
+}
